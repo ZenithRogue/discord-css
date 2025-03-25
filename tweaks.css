@@ -1,0 +1,165 @@
+/* Annoying stuff I want to hide */
+button[aria-label="Send a gift"],
+button[aria-label="Open sticker picker"],
+div[aria-label^="Click to react with"],
+.separator_f84418,
+div[class^=channelAppLauncher_],
+.reactionSuggestion_d1c246,
+.app-launcher-entrypoint,
+.vc-uvs-message-indicator {
+    display: none;
+}
+div[class^=jumpToPresentBar] {
+    right: 16px !important;
+}
+/* Hide Pinned Guild Discover Button */
+div[class^="footer_"]:has(div[data-list-item-id="guildsnav___guild-discover-button"]) {
+  display: none;
+}
+div[class*=unreadMentionsFixedFooter_] {
+    bottom: 0;
+}
+/* Re-add 'Today at' to timestamps */
+h3 > span > time[aria-label^="Today at"]::before {
+    content: "Today at ";
+}
+
+.visual-refresh {
+    /* Remove user profile overlap from server list */
+    section.panels_c48ade {
+        margin-left: 64px;
+        width: calc(100% - 72px) !important;
+        bottom: 0;
+        border-radius: 0;
+    }
+    .visual-refresh .container__37e49 {
+        height: 48px;
+        padding: 6px;
+    }
+    nav.wrapper_ef3116.guilds_c48ade {
+        margin-bottom: 0;
+    }
+    /* Context Menu Padding*/
+    .labelContainer_c1e9c4,
+    .scroller_c1e9c4 {
+        padding: 6px;
+    }
+    .wrapper_f563df {
+        padding: 4px 2px;
+    }
+    .separator_c1e9c4 {
+        margin: 2px;
+    }
+    /* Channel List Padding */
+    .containerDefault_c69b6d > div > div > a,
+    .containerDefault_c69b6d > div > div > div > a{
+        padding: 2px 6px;
+    }
+    .wrapper__29444 {
+        padding: 2px 12px;
+    }
+    /* Window Topbar Size */
+    .title_c38106 {
+        display: none;
+    }
+    .bar_c38106 {
+        padding-right: 8px;
+    }
+    * {
+        --custom-app-top-bar-height: 24px;
+    }
+    .leading_c38106, .trailing_c38106 {
+        gap: 2px;
+    }
+    /* Jump to Present */
+    .bottomBar__0f481.jumpToPresentBar__0f481 {
+        margin: 0px 6px;
+        width: calc(100% - 12px);
+        padding: 4px 6px 12px 10px;
+        min-height: 10px;
+        box-shadow: none;
+        bottom: -10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        & .lookFilled__201d5 {
+            margin: 0;
+        }
+    }
+    /* New Member Badge Color */
+    .newMemberBadge_f80704 {
+        --text-positive: #4cc06c;
+    }
+    /* Chat Input */
+    .accessoryBar__74017 {
+        padding: 2px;
+    }
+    .vc-chatbar-button {
+        scale: 0.75;
+    }
+    .buttons__74017 {
+        gap: 0;
+    }
+    .clipContainer__841c8 {
+        padding-top: 0;
+    }
+    /* Typing Indicator */
+    .typing_b88801 {
+        .wrapper__44b0c {
+            top: -4px;
+        }
+    }
+    .ellipsis_b88801 {
+        translate: 0px -2px;
+        scale: 0.75;
+    }
+    /* Channel Name Offset*/
+    .container__9293f {
+        padding-left: 10px;
+    }
+    /* Server Icon Size Fix */
+    .wrapper_cc5dd2 {
+        scale: 1.2;
+        margin: 4px 0;
+        
+    }
+    .wrapper__6e9f8, expandedFolderIconWrapper__48112 {
+        border-radius: 100%;
+        overflow: hidden;
+    }
+    .selected_e5445c {
+        .wrapper__6e9f8 {
+            border-radius: 0%;
+            overflow: hidden;
+        }
+    }
+    .isExpanded__48112 {
+        .stack_dbd263 {
+            height: max-content !important;
+            margin-bottom: 4px;
+        }
+    }
+    .expandedFolderBackground__48112 {
+        border-radius: 14px;
+        margin-top: 4px;
+        height: calc(100% - 8px);
+    }
+    /* Search Filter Fix */
+    .searchFilter_bd8186:nth-child(2) {
+        border-radius: 0;
+        border-top-left-radius: var(--radius-xs);
+        border-bottom-left-radius: var(--radius-xs);
+        border: 1px solid var(--border-faint);
+        border-right: none;
+        padding-left: 2px;
+        padding-right: 0;
+    }
+    .searchAnswer_bd8186{
+        border-radius: 0;
+        border-top-right-radius: var(--radius-xs);
+        border-bottom-right-radius: var(--radius-xs);
+        border: 1px solid var(--border-faint);
+        border-left: none;
+        padding-left: 0;
+        padding-right: 4px;
+    }
+}
