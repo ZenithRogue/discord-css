@@ -23,7 +23,10 @@ div[class*=unreadMentionsFixedFooter_] {
 h3 > span > time[aria-label^="Today at"]::before {
     content: "Today at ";
 }
-
+/* Promoted Tile? Go fuck yourself */
+.wrapper_e9b191:has(.promotedTag__1d868) {
+    display: none;
+}
 .visual-refresh {
     /* Remove user profile overlap from server list */
     section.panels_c48ade {
@@ -183,6 +186,35 @@ h3 > span > time[aria-label^="Today at"]::before {
     .botTagVerified__82f07 {
         height: 14px;
     }
+    /* Slowmode */
+    .channelTextArea_f75fb0.channelTextArea__74017,
+    .scrollableContainer__74017.themedBackground__74017  {
+        overflow: visible;
+        .rightAccessories__74017 {
+            position: absolute;
+            right: 0;
+            transform: translate(-6px, -20px);
+            opacity: 0%;
+            transition: 0.25s;
+        }
+    }
+    .channelTextArea__74017:has(.stackedBars__74017) {
+        .rightAccessories__74017 {
+            transform: translate(-6px, -55px);
+        }
+    }
+    .channelTextArea__74017:hover  {
+        .rightAccessories__74017 {
+            opacity: 100%;
+        }
+    }
+    /* Embed Padding */
+    .grid__623de {
+        padding-top: 8px;
+    }
+    .markup__75297 pre {
+        margin-top: 0;
+    }
     /* Sort-Kinda Color Revert */
     * {
         --background-primary: #313338;
@@ -230,5 +262,8 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .contentRegionScroller__23e6b {
         background: var(--background-base-lowest);
+    }
+    .panel__5dec7 {
+        background: none;
     }
 }
