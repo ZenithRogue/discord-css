@@ -52,11 +52,13 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     /* Channel List Padding */
     .containerDefault_c69b6d > div > div > a,
-    .containerDefault_c69b6d > div > div > div > a{
+    .containerDefault_c69b6d > div > div > div > a,
+    .wrapper__29444 {
         padding: 2px 6px;
     }
-    .wrapper__29444 {
-        padding: 2px 12px;
+    .mainContent__29444 {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
     }
     /* Window Topbar Size */
     .title_c38106 {
