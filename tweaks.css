@@ -187,6 +187,8 @@ h3 > span > time[aria-label^="Today at"]::before {
         --background-code: var(--background-base-low);
         --background-message-hover: #2e3035;
         --card-primary-bg: var(--bg-base-tertiary);
+        --scrollbar-auto-thumb: var(--bg-base-tertiary);
+        --scrollbar-thin-thumb: var(--bg-base-tertiary);
     }
     .container__0f2e8 {
         background: var(--background-primary);
@@ -202,6 +204,15 @@ h3 > span > time[aria-label^="Today at"]::before {
         margin-top: var(--custom-app-top-bar-height);
     }
     .base_c48ade {
-        background: var(--bg-base-tertiary)
+        background: var(--bg-base-tertiary);
+    }
+    .lookFilled__201d5.colorPrimary__201d5 {
+        background: var(--input-background);
+    }
+    .sidebarRegionScroller__23e6b {
+        background: var(--background-base-low);
+    }
+    .contentRegionScroller__23e6b {
+        background: var(--background-base-lowest);
     }
 }
