@@ -167,25 +167,34 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding-left: 0;
         padding-right: 4px;
     }
+    /* Bot Tag Size */
+    .botText__82f07 {
+        font-size: 10px;
+        font-weight: normal;
+        padding-top: 1px;
+    }
+    .botTagVerified__82f07 {
+        height: 14px;
+    }
     /* Sort-Kinda Color Revert */
     * {
         --background-primary: #313338;
         --background-secondary: #2b2d31;
-        --custom-channel-members-bg: var(--background-secondary);
-        --chat-background-default: #383a40;
-        --__header-bar-background: var(--background-primary) !important;
-        --background-base-low: #232428;
         --bg-base-tertiary: #1e1f22;
+        --chat-background-default: #383a40;
+        --background-message-hover: #2e3035;
+        --__header-bar-background: var(--background-primary) !important;
+        --custom-channel-members-bg: var(--background-secondary);
         --background-mod-subtle: var(--background-secondary);
-        --input-background: var(--bg-base-tertiary);
         --background-floating: var(--background-secondary);
+        --input-background: var(--bg-base-tertiary);
+        --background-base-low: #232428;
+        --background-base-lower: var(--background-primary);
+        --background-base-lowest: var(--background-secondary);
         --background-surface-high: var(--background-secondary);
         --background-surface-higher: var(--background-base-low);
         --background-surface-highest: var(--background-secondary);
-        --background-base-lower: var(--background-primary);
-        --background-base-lowest: var(--background-secondary);
         --background-code: var(--background-base-low);
-        --background-message-hover: #2e3035;
         --card-primary-bg: var(--bg-base-tertiary);
         --scrollbar-auto-thumb: var(--bg-base-tertiary);
         --scrollbar-thin-thumb: var(--bg-base-tertiary);
