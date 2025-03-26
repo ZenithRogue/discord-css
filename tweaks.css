@@ -124,7 +124,7 @@ h3 > span > time[aria-label^="Today at"]::before {
     /* Server Icon Size Fix */
     .wrapper_cc5dd2 {
         scale: 1.2;
-        margin: 4px 0;
+        margin: 4px 0.5px 4px 0;
         
     }
     .wrapper__6e9f8, expandedFolderIconWrapper__48112 {
@@ -141,12 +141,19 @@ h3 > span > time[aria-label^="Today at"]::before {
         .stack_dbd263 {
             height: max-content !important;
             margin-bottom: 4px;
+            overflow: visible;
         }
     }
     .expandedFolderBackground__48112 {
         border-radius: 14px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
         margin-top: 4px;
         height: calc(100% - 8px);
+    }
+    .iconSizeMini_f34534 {
+        border-radius: 20px !important;
+        overflow: hidden;
     }
     /* Search Filter Fix */
     .searchFilter_bd8186:nth-child(2) {
