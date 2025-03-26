@@ -39,6 +39,9 @@ h3 > span > time[aria-label^="Today at"]::before {
     nav.wrapper_ef3116.guilds_c48ade {
         margin-bottom: 0;
     }
+    .sidebar_c48ade:after {
+        background: none !important;
+    }
     /* Context Menu Padding*/
     .labelContainer_c1e9c4,
     .scroller_c1e9c4 {
@@ -51,8 +54,8 @@ h3 > span > time[aria-label^="Today at"]::before {
         margin: 2px;
     }
     /* Channel List Padding */
-    .containerDefault_c69b6d > div > div > a,
-    .containerDefault_c69b6d > div > div > div > a,
+    /* .containerDefault_c69b6d > div > div > a,
+    .containerDefault_c69b6d > div > div > div > a, */
     .wrapper__29444 {
         padding: 2px 6px;
     }
@@ -75,8 +78,8 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     /* Jump to Present */
     .bottomBar__0f481.jumpToPresentBar__0f481 {
-        margin: 0px 6px;
-        width: calc(100% - 12px);
+        margin: 0px 8px;
+        width: calc(100% - 16px);
         padding: 4px 6px 12px 10px;
         min-height: 10px;
         box-shadow: none;
@@ -163,5 +166,42 @@ h3 > span > time[aria-label^="Today at"]::before {
         border-left: none;
         padding-left: 0;
         padding-right: 4px;
+    }
+    /* Sort-Kinda Color Revert */
+    * {
+        --background-primary: #313338;
+        --background-secondary: #2b2d31;
+        --custom-channel-members-bg: var(--background-secondary);
+        --chat-background-default: #383a40;
+        --__header-bar-background: var(--background-primary) !important;
+        --background-base-low: #232428;
+        --bg-base-tertiary: #1e1f22;
+        --background-mod-subtle: var(--background-secondary);
+        --input-background: var(--bg-base-tertiary);
+        --background-floating: var(--background-secondary);
+        --background-surface-high: var(--background-secondary);
+        --background-surface-higher: var(--background-base-low);
+        --background-surface-highest: var(--background-secondary);
+        --background-base-lower: var(--background-primary);
+        --background-base-lowest: var(--background-secondary);
+        --background-code: var(--background-base-low);
+        --background-message-hover: #2e3035;
+        --card-primary-bg: var(--bg-base-tertiary);
+    }
+    .container__0f2e8 {
+        background: var(--background-primary);
+    }
+    .channelAttachmentArea_b77158 {
+        background: none;
+    }
+    .contentTransitionWrap__23e6b,
+    .sidebarRegion__23e6b {
+        background: var(--bg-base-tertiary);
+    }
+    .sidebarRegionScroller__23e6b {
+        margin-top: var(--custom-app-top-bar-height);
+    }
+    .base_c48ade {
+        background: var(--bg-base-tertiary)
     }
 }
