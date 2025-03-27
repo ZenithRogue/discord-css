@@ -88,7 +88,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding: 4px 6px 12px 10px;
         min-height: 10px;
         box-shadow: none;
-        bottom: -10px;
+        bottom: -5px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         & .lookFilled__201d5 {
@@ -223,6 +223,35 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .content_d125d2 {
         margin-bottom: 10px;
+    }
+    /* Voice Channel Switch Alert */
+    .container__468a6 {
+        background: var(--background-secondary);
+    }
+    .form__468a6 {
+        background: none;
+        .modalContent__468a6 {
+            background: none;
+        }
+        .flex__7c0ba {
+            justify-content: center;
+            text-align: center;
+            background: none;
+            button {
+                width: 40%;
+                &.secondaryButton__468a6 {
+                    background: var(--chat-background-default);
+                    &:hover {
+                        background: var(--background-primary);
+                    }
+                }
+            }
+        }
+    }
+    /* Hide Voice Chat Icon in Member List */
+    .dot_c9d15c,
+    .icon_c9d15c {
+        display: none;
     }
     /* Sort-Kinda Color Revert */
     * {
