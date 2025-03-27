@@ -57,14 +57,16 @@ h3 > span > time[aria-label^="Today at"]::before {
         margin: 2px;
     }
     /* Channel List Padding */
-    /* .containerDefault_c69b6d > div > div > a,
-    .containerDefault_c69b6d > div > div > div > a, */
     .wrapper__29444 {
         padding: 2px 6px;
     }
     .mainContent__29444 {
         flex-direction: row-reverse;
         justify-content: flex-end;
+    }
+    /* Channel min width */
+    .sidebarList_c48ade {
+        min-width: 240px;
     }
     /* Window Topbar Size */
     .title_c38106 {
@@ -215,8 +217,20 @@ h3 > span > time[aria-label^="Today at"]::before {
     .markup__75297 pre {
         margin-top: 0;
     }
+    /* Chat input padding*/
+    .channelTextArea__74017 {
+        --custom-channel-textarea-text-area-height: 42px;
+    }
+    .content_d125d2 {
+        margin-bottom: 10px;
+    }
     /* Sort-Kinda Color Revert */
     * {
+        --__spoiler-background-color--hidden: #202225;
+        --__current--spoiler-background-color: #4B4D52;
+        --__spoiler-background-color--hidden--hover: #20222566;
+        --text-feedback-positive: rgb(67, 162, 90);
+        --text-link: #00a8fc;
         --background-primary: #313338;
         --background-secondary: #2b2d31;
         --bg-base-tertiary: #1e1f22;
@@ -258,10 +272,10 @@ h3 > span > time[aria-label^="Today at"]::before {
         background: var(--input-background);
     }
     .sidebarRegionScroller__23e6b {
-        background: var(--background-base-low);
+        background: var(--background-secondary);
     }
     .contentRegionScroller__23e6b {
-        background: var(--background-base-lowest);
+        background: var(--background-primary);
     }
     .panel__5dec7 {
         background: none;
