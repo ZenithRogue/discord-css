@@ -189,7 +189,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         height: 14px;
     }
     /* Slowmode */
-    .channelTextArea_f75fb0.channelTextArea__74017,
+    /* .channelTextArea_f75fb0.channelTextArea__74017,
     .scrollableContainer__74017.themedBackground__74017  {
         overflow: visible;
         .rightAccessories__74017 {
@@ -209,7 +209,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         .rightAccessories__74017 {
             opacity: 100%;
         }
-    }
+    } */
     /* Embed Padding */
     .grid__623de {
         padding-top: 8px;
@@ -252,6 +252,11 @@ h3 > span > time[aria-label^="Today at"]::before {
     .dot_c9d15c,
     .icon_c9d15c {
         display: none;
+    }
+    /* Fix DM Notication Padding */
+    .stack_dbd263 > div:has(img[src*="avatar"]),
+    .stack_dbd263 > div:has(img[src*="channel-icons"]){
+        margin-bottom: 8px !important;
     }
     /* Sort-Kinda Color Revert */
     * {
@@ -308,5 +313,10 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .panel__5dec7 {
         background: none;
+    }
+    /* Probably the worst way to modify the code block colors */
+    .codeLine_ada32f > span,
+    .hljs > span {
+        filter: saturate(4) hue-rotate(589deg) invert(1) brightness(2.25) contrast(0.5) hue-rotate(136deg) contrast(1.5) invert(1) hue-rotate(365deg) contrast(0.5) saturate(1.5) brightness(1.25) hue-rotate(340deg);
     }
 }
