@@ -314,6 +314,9 @@ h3 > span > time[aria-label^="Today at"]::before {
     .panel__5dec7 {
         background: none;
     }
+    .contentRegion__23e6b {
+        background: var(--bg-base-tertiary);
+    }
     /* Probably the worst way to modify the code block colors */
     .codeLine_ada32f > span,
     .hljs > span {
