@@ -258,6 +258,16 @@ h3 > span > time[aria-label^="Today at"]::before {
     .stack_dbd263 > div:has(img[src*="channel-icons"]){
         margin-bottom: 8px !important;
     }
+    /* Hide disabled buttons on vc */
+    .panels_c48ade {
+        .disabledButtonWrapper__201d5 {
+            display: none;
+        }
+    }
+    /* Move search bar all the way to the right */
+    .search__49676 {
+        order: 1;
+    }
     /* Sort-Kinda Color Revert */
     * {
         --__spoiler-background-color--hidden: #202225;
@@ -316,6 +326,12 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .contentRegion__23e6b {
         background: var(--bg-base-tertiary);
+    }
+    .childWrapperNoHoverBg__6e9f8 {
+        background-color: var(--background-primary);
+    }
+    .expandedFolderBackground__48112 {
+        background: var(--background-secondary);
     }
     /* Probably the worst way to modify the code block colors */
     .codeLine_ada32f > span,
