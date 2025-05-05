@@ -64,6 +64,9 @@ h3 > span > time[aria-label^="Today at"]::before {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
+    .folderGroup__48112 {
+        margin-bottom: 8px;
+    }
     /* Channel min width */
     .sidebarList_c48ade {
         min-width: 240px;
@@ -112,14 +115,8 @@ h3 > span > time[aria-label^="Today at"]::before {
     .clipContainer__841c8 {
         padding-top: 0;
     }
-    /* Typing Indicator */
-    .typing_b88801 {
-        .wrapper__44b0c {
-            top: -4px;
-        }
-    }
     .ellipsis_b88801 {
-        translate: 0px -2px;
+        translate: 0px -1px;
         scale: 0.75;
     }
     /* Channel Name Offset*/
@@ -148,6 +145,13 @@ h3 > span > time[aria-label^="Today at"]::before {
             margin-bottom: 4px;
             overflow: visible;
         }
+    }
+    /* Server Groups */
+    .folderGroupBackground__48112 {
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        margin-bottom: 5px;
+        margin-top: 4px;
     }
     .expandedFolderBackground__48112 {
         border-radius: 14px;
@@ -257,6 +261,9 @@ h3 > span > time[aria-label^="Today at"]::before {
     .stack_dbd263 > div:has(img[src*="avatar"]),
     .stack_dbd263 > div:has(img[src*="channel-icons"]){
         margin-bottom: 8px !important;
+        &:last-of-type {
+            margin-bottom: 0px !important;
+        }
     }
     /* Hide disabled buttons on vc */
     .panels_c48ade {
@@ -269,7 +276,8 @@ h3 > span > time[aria-label^="Today at"]::before {
         order: 1;
     }
     /* Sort-Kinda Color Revert */
-    * {
+    *,
+    .theme-dark {
         --__spoiler-background-color--hidden: #202225;
         --__current--spoiler-background-color: #4B4D52;
         --__spoiler-background-color--hidden--hover: #20222566;
@@ -286,7 +294,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         --background-floating: var(--background-secondary);
         --input-background: var(--bg-base-tertiary);
         --background-base-low: #232428;
-        --background-base-lower: var(--background-primary);
+        --background-base-lower: var(--background-primary) !important;
         --background-base-lowest: var(--background-secondary);
         --background-surface-high: var(--background-secondary);
         --background-surface-higher: var(--background-base-low);
@@ -296,9 +304,8 @@ h3 > span > time[aria-label^="Today at"]::before {
         --scrollbar-auto-thumb: var(--bg-base-tertiary);
         --scrollbar-thin-thumb: var(--bg-base-tertiary);
     }
-    .container__0f2e8 {
-        background: var(--background-primary);
-    }
+    /* Guild Nav */
+    .wrapper_ef3116,
     .channelAttachmentArea_b77158 {
         background: none;
     }
@@ -329,9 +336,6 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .childWrapperNoHoverBg__6e9f8 {
         background-color: var(--background-primary);
-    }
-    .expandedFolderBackground__48112 {
-        background: var(--background-secondary);
     }
     /* Probably the worst way to modify the code block colors */
     .codeLine_ada32f > span,
