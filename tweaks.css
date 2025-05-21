@@ -164,6 +164,9 @@ h3 > span > time[aria-label^="Today at"]::before {
         border-radius: 20px !important;
         overflow: hidden;
     }
+    .folderButton__48112 {
+        overflow: visible;
+    }
     /* Search Filter Fix */
     .searchFilter_bd8186:nth-child(2) {
         border-radius: 0;
@@ -303,6 +306,8 @@ h3 > span > time[aria-label^="Today at"]::before {
         --card-primary-bg: var(--bg-base-tertiary);
         --scrollbar-auto-thumb: var(--bg-base-tertiary);
         --scrollbar-thin-thumb: var(--bg-base-tertiary);
+        --custom-folder-background: var(--background-secondary) !important;
+        --app-border-frame: #8884 !important;
     }
     /* Guild Nav */
     .wrapper_ef3116,
