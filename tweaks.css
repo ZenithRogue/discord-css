@@ -96,6 +96,9 @@ h3 > span > time[aria-label^="Today at"]::before {
         border-bottom-right-radius: 0;
         & .lookFilled__201d5 {
             margin: 0;
+            min-height: 22px;
+            height: 22px;
+            padding: 10px 12px;
         }
     }
     /* New Member Badge Color */
@@ -116,7 +119,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding-top: 0;
     }
     .ellipsis_b88801 {
-        translate: 0px -1px;
+        translate: 0px 0px;
         scale: 0.75;
     }
     /* Channel Name Offset*/
@@ -174,7 +177,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         border-bottom-left-radius: var(--radius-xs);
         border: 1px solid var(--border-faint);
         border-right: none;
-        padding-left: 2px;
+        padding-left: 4px;
         padding-right: 0;
     }
     .searchAnswer_bd8186{
@@ -278,9 +281,12 @@ h3 > span > time[aria-label^="Today at"]::before {
     .search__49676 {
         order: 1;
     }
+    /* Games Icon Glow */
+    .appLauncherGlow_e6e74f {
+        display: none;
+    }
     /* Sort-Kinda Color Revert */
-    *,
-    .theme-dark {
+    *, .theme-dark {
         --__spoiler-background-color--hidden: #202225;
         --__current--spoiler-background-color: #4B4D52;
         --__spoiler-background-color--hidden--hover: #20222566;
@@ -346,5 +352,17 @@ h3 > span > time[aria-label^="Today at"]::before {
     .codeLine_ada32f > span,
     .hljs > span {
         filter: saturate(4) hue-rotate(589deg) invert(1) brightness(2.25) contrast(0.5) hue-rotate(136deg) contrast(1.5) invert(1) hue-rotate(365deg) contrast(0.5) saturate(1.5) brightness(1.25) hue-rotate(340deg);
+    }
+    /* For some reason discord overwrote the codeblock css to not use the color var */
+    .embed__623de code {
+        background: var(--background-code);
+        border: 1px solid var(--border-normal);
+    }
+    /* Status bubble was unreadable */
+    span.inner_ab8609 {
+        background: var(--background-secondary);
+        .statusText_ab8609 {
+            color: whitesmoke;
+        }
     }
 }
