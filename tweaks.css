@@ -285,6 +285,10 @@ h3 > span > time[aria-label^="Today at"]::before {
     .appLauncherGlow_e6e74f {
         display: none;
     }
+    /* Fix Expanded code border clip */
+    .modalRoot__4d95d {
+        overflow: hidden;
+    }
     /* Sort-Kinda Color Revert */
     *, .theme-dark {
         --__spoiler-background-color--hidden: #202225;
@@ -354,9 +358,27 @@ h3 > span > time[aria-label^="Today at"]::before {
         filter: saturate(4) hue-rotate(589deg) invert(1) brightness(2.25) contrast(0.5) hue-rotate(136deg) contrast(1.5) invert(1) hue-rotate(365deg) contrast(0.5) saturate(1.5) brightness(1.25) hue-rotate(340deg);
     }
     /* For some reason discord overwrote the codeblock css to not use the color var */
-    .embed__623de code {
+    .embed__623de code,
+    .textContainer__4d95d {
         background: var(--background-code);
         border: 1px solid var(--border-normal);
+    }
+    .modalContent__4d95d {
+        code {
+            background: var(--background-code);
+        }
+        .modalTextContainer__4d95d {
+            --scrollbar-auto-thumb: #0008;
+            --scrollbar-thin-thumb: #0008;
+        }
+        .thin_d125d2::-webkit-scrollbar-track {
+            background: var(--background-code);
+        }
+    }
+    .textContainer__4d95d code,
+    .modalTextContainer__4d95d {
+        border: none;
+        background: none;
     }
     /* Status bubble was unreadable */
     span.inner_ab8609 {
@@ -366,3 +388,41 @@ h3 > span > time[aria-label^="Today at"]::before {
         }
     }
 }
+
+/* Comment or uncomment this to censor names/pfps */
+/* .username_c19a55{
+    visibility: hidden;
+    text-align: justify;
+    &:before {
+        visibility: visible;
+        content: "████████████████████████████████████████████████████████████";
+        width: 100%;
+        margin-right: 10px;
+        clip-path: rect(0 100% 100% 0);
+        filter: blur(10px);
+        position: absolute;
+    }
+}
+.avatar_c19a55, .replyAvatar_c19a55, .executedCommandAvatar_c19a55  {
+    filter: blur(10px);
+    overflow: hidden;
+    border-radius: 20px;
+    clip-path: circle();
+}
+.roleIcon__1e6f1 {
+    display: none;
+}
+.mention.wrapper_f61d60 {
+    visibility: hidden;
+    overflow: hidden;
+    clip-path: rect(0 100% 100% 0);
+    &:before {
+        visibility: visible;
+        content: "████████████████████████████████████████████████████████████";
+        width: calc(100% - 20px);
+        margin-right: 10px;
+        overflow-y: hidden;
+        filter: blur(10px);
+        position: absolute;
+    }
+} */
