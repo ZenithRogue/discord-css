@@ -85,15 +85,11 @@ h3 > span > time[aria-label^="Today at"]::before {
         gap: 2px;
     }
     /* Chat Input Fixes */
-    .attachWrapper__0923f {
-        transform: translate(3px, 5px);
-        height: 0;
-    }
     .scrollerSpacer__36d07 {
         height: 24px;
     }
     .form_f75fb0 {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
     .typing_b88801 {
         top: none;
@@ -105,6 +101,30 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .cooldownWrapper_b21699 {
         translate: 0px 2px;
+        padding: 0;
+    }
+    /* Attach Button Style Chnage */
+    .attachWrapper__0923f {
+        transform: translate(3px, 5px);
+        height: 0;
+        .attachButton__0923f {
+            &:hover {
+                background: none !important;
+            }
+            .buttonWrapper__24af7 {
+                margin: 0 10px;
+                margin: 0 13px 0 7px;
+                svg {
+                    background: #c4c5c9;
+                    border-radius: 20px;
+                    clip-path: circle(9px);
+                    path {
+                        clip-path: inset(4px);
+                        fill: var(--chat-background-default) !important;
+                    }
+                }
+            }
+        }
     }
     /* Weird chat gradient thing */
     .messagesWrapper__36d07 {
