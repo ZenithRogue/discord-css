@@ -347,6 +347,16 @@ h3 > span > time[aria-label^="Today at"]::before {
     div[class^=modalRoot] {
         tab-size: 4;
     }
+    /* VC Connection Box Style */
+    .ping__06d62{
+        background: none !important;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+    }
+    .voiceButtonsContainer_e131a9 {
+        gap: 0;
+    }
     /* Sort-Kinda Color Revert */
     *, .theme-dark {
         --__spoiler-background-color--hidden: #202225;
