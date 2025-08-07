@@ -90,21 +90,22 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .form_f75fb0 {
         margin-bottom: 16px;
-    }
-    .typing_b88801 {
-        top: none;
-        order: 1;
-        translate: -10px -8px;
-        .text_b88801 {
-            margin-left: 8px;
+        .typing_b88801.inTextChannel_b88801.base_b88801 {
+            top: unset;
+            bottom: -24px;
+            translate: -10px -8px;
+            .text_b88801 {
+                margin-left: 8px;
+            }
+            .cooldownWrapper_b21699 {
+                translate: 2px 0px;
+                padding: 0;
+            }
         }
-    }
-    .cooldownWrapper_b21699 {
-        translate: 0px 2px;
-        padding: 0;
     }
     /* Attach Button Style Chnage */
     .attachWrapper__0923f {
+        padding: 0;
         transform: translate(3px, 5px);
         height: 0;
         .attachButton__0923f {
@@ -356,6 +357,19 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .voiceButtonsContainer_e131a9 {
         gap: 0;
+    }
+    .container__37e49 {
+        gap: 0;
+        .buttons__37e49 {
+            gap: 0;
+        }
+    }
+    .panels_c48ade > .container__37e49,
+    .container_e131a9 {
+        padding: 8px;
+        .actionButtons_e131a9 {
+            gap: 4px;
+        }
     }
     /* Sort-Kinda Color Revert */
     *, .theme-dark {
