@@ -144,7 +144,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding: 4px 6px 12px 10px;
         min-height: 10px;
         box-shadow: none;
-        bottom: 6px;
+        bottom: -6px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         & .lookFilled__201d5 {
@@ -365,13 +365,13 @@ h3 > span > time[aria-label^="Today at"]::before {
             gap: 0;
         }
     }
-    .panels_c48ade > .container__37e49,
+    /* .panels_c48ade > .container__37e49,
     .container_e131a9 {
         padding: 8px;
         .actionButtons_e131a9 {
             gap: 4px;
         }
-    }
+    } */
     /* Sort-Kinda Color Revert */
     *, .theme-dark {
         --__spoiler-background-color--hidden: #202225;
