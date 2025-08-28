@@ -85,10 +85,10 @@ h3 > span > time[aria-label^="Today at"]::before {
         gap: 2px;
     }
     /* Chat Input Fixes */
-    /* .scrollerSpacer__36d07 {
+    .scrollerSpacer__36d07 {
         height: 24px;
-    } */
-    /* .form_f75fb0 {
+    }
+    .form_f75fb0 {
         margin-bottom: 16px;
         .typing_b88801.inTextChannel_b88801.base_b88801 {
             top: unset;
@@ -102,9 +102,9 @@ h3 > span > time[aria-label^="Today at"]::before {
                 padding: 0;
             }
         }
-    } */
+    }
     /* Attach Button Style Change */
-    /* .attachWrapper__0923f {
+    .attachWrapper__0923f {
         padding: 0;
         transform: translate(3px, 5px);
         height: 0;
@@ -126,7 +126,7 @@ h3 > span > time[aria-label^="Today at"]::before {
                 }
             }
         }
-    } */
+    }
     /* Weird chat gradient thing */
     .messagesWrapper__36d07,
     .scroller__36d07 {
@@ -144,7 +144,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding: 4px 6px 12px 10px;
         min-height: 10px;
         box-shadow: none;
-        bottom: -6px;
+        bottom: 1px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         & .lookFilled__201d5 {
@@ -288,7 +288,10 @@ h3 > span > time[aria-label^="Today at"]::before {
         --custom-channel-textarea-text-area-height: 42px;
     }
     .content_d125d2 {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    .messagesWrapper__36d07 {
+        /* margin-bottom: -10px; */
     }
     /* Voice Channel Switch Alert */
     .container__468a6 {
@@ -365,12 +368,24 @@ h3 > span > time[aria-label^="Today at"]::before {
             gap: 0;
         }
     }
-    /* .panels_c48ade > .container__37e49,
+    .panels_c48ade > .container__37e49,
     .container_e131a9 {
         padding: 8px;
         .actionButtons_e131a9 {
             gap: 4px;
         }
+    }
+    /* Member list padding */
+    /* .member__5d473 {
+        margin-left: 0;
+        max-width: var(--custom-member-list-width);
+        .childContainer__91a9d {
+            margin-left: 8px;
+            padding-left: 0;
+        }
+    }
+    .membersGroup_c8ffbb {
+        padding-left: 14px;
     } */
     /* Sort-Kinda Color Revert */
     *, .theme-dark {
