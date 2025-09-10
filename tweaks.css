@@ -132,6 +132,9 @@ h3 > span > time[aria-label^="Today at"]::before {
     .scroller__36d07 {
         mask: none !important;
     }
+    .chatGradientBase__36d07 {
+        display: none;
+    }
     /* STUPID Chat Buttons AGAIN */
     div[aria-label="Send a gift"],
     div.expression-picker-chat-input-button:has(div[aria-label="Open sticker picker"]) {
@@ -144,7 +147,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding: 4px 6px 12px 10px;
         min-height: 10px;
         box-shadow: none;
-        bottom: 1px;
+        bottom: 6px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         & .lookFilled__201d5 {
@@ -288,7 +291,8 @@ h3 > span > time[aria-label^="Today at"]::before {
         --custom-channel-textarea-text-area-height: 42px;
     }
     .content_d125d2 {
-        margin-bottom: 0px;
+        /* margin-bottom: 0px; */
+        margin-bottom: 12px;
     }
     .messagesWrapper__36d07 {
         /* margin-bottom: -10px; */
@@ -486,7 +490,6 @@ h3 > span > time[aria-label^="Today at"]::before {
         }
     }
 }
-
 /* Comment or uncomment this to censor names/pfps */
 /* .username_c19a55{
     visibility: hidden;
