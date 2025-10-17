@@ -392,7 +392,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding-left: 14px;
     } */
     /* Hide carrot menus on mic and headphone buttons */
-    .containerRtcOpened__37e49 {
+    .buttons__37e49 {
         .micButtonParent__37e49 .micButtonWithMenu__37e49 {
             border-radius: var(--radius-sm);
         }
