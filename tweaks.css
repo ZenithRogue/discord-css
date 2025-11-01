@@ -29,7 +29,7 @@ h3 > span > time[aria-label^="Today at"]::before {
 }
 .visual-refresh {
     /* Remove user profile overlap from server list */
-    section.panels_c48ade {
+    section[aria-label="User area"] {
         margin-left: 64px;
         width: calc(100% - 72px) !important;
         bottom: 0;
@@ -39,11 +39,14 @@ h3 > span > time[aria-label^="Today at"]::before {
         height: 48px;
         padding: 6px;
     }
-    nav.wrapper_ef3116.guilds_c48ade {
-        margin-bottom: 0;
-    }
-    .sidebar_c48ade:after {
+    .sidebar__5e434:after {
         background: none !important;
+    }
+    nav[aria-label="Servers sidebar"] {
+        margin-bottom: 0;
+        div[data-align="stretch"] {
+            padding-bottom: 12px;
+        }
     }
     /* Context Menu Padding*/
     .labelContainer_c1e9c4,
@@ -463,6 +466,9 @@ h3 > span > time[aria-label^="Today at"]::before {
     .childWrapperNoHoverBg__6e9f8 {
         background-color: var(--background-primary);
     }
+    .sidebar__5e434 {
+        background: var(--bg-base-tertiary);
+    }
     /* Probably the worst way to modify the code block colors */
     /* .codeLine_ada32f > span,
     .hljs > span {
@@ -500,6 +506,10 @@ h3 > span > time[aria-label^="Today at"]::before {
     }
     .wrapperAudio_cf09d8 {
         background: var(--background-secondary);
+    }
+    /* Window Bar */
+    .bar_c38106 {
+        background: var(--bg-base-tertiary);
     }
 }
 /* Comment or uncomment this to censor names/pfps */
