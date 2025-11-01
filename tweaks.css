@@ -403,6 +403,11 @@ h3 > span > time[aria-label^="Today at"]::before {
             display: none;
         }
     }
+    /* Voice Buttons */
+    .activityPanel__5e434,
+    .container__37e49 {
+        padding: 12px 8px;
+    }
     /* Sort-Kinda Color Revert */
     *, .theme-dark {
         --__spoiler-background-color--hidden: #202225;
