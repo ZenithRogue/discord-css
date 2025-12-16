@@ -23,6 +23,30 @@ div[class*=unreadMentionsFixedFooter_] {
 h3 > span > time[aria-label^="Today at"]::before {
     content: "Today at ";
 }
+/* .timestamp_c19a55 {
+    container-type: normal;
+    container-name: timestamp;
+    width: fit-content;
+} */
+/* .timestamp_c19a55 {
+    width: fit-content;
+    width: 100px;
+    container-type: inline-size;
+    container-name: timestamp;
+    @container timestamp (min-width: 10rem) {
+        h3 > span > span > time {
+            content: "Today at ";
+            color: red;
+        }
+    }
+} */
+/* h3 > span > span > time {
+    content: "Today at ";
+    color: red;
+} */
+
+
+
 /* Promoted Tile? Go fuck yourself */
 .wrapper_e9b191:has(.promotedTag__1d868) {
     display: none;
