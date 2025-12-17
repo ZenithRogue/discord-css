@@ -213,7 +213,9 @@ h3 > span > time[aria-label^="Today at"]::before {
         padding-left: 10px;
     }
     /* Server Icon Size Fix */
-    .e5445cbd3ad226f2-blobContainer {
+    .e5445cbd3ad226f2-blobContainer,
+    .cc5dd25190031396-wrapper:has(div[aria-owns="guild-list-unread-dms"]),
+    div[aria-label="Direct Messages"] .cc5dd25190031396-wrapper {
         scale: 1.2;
         margin: 4px 0.5px 4px 0;
     }
