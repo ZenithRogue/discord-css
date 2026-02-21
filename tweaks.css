@@ -53,7 +53,7 @@ h3 > span > time[aria-label^="Today at"]::before {
 }
 .visual-refresh {
     /* Remove user profile overlap from server list */
-    section[aria-label="User area"] {
+    section[aria-label="User status and settings"] {
         margin-left: 64px;
         width: calc(100% - 72px) !important;
         bottom: 0;
@@ -435,7 +435,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         .micButtonParent__37e49 .micButtonWithMenu__37e49 {
             border-radius: var(--radius-sm);
         }
-        .buttonChevron__37e49 {
+        .buttonChevron__5e764 {
             display: none;
         }
     }
@@ -511,7 +511,7 @@ h3 > span > time[aria-label^="Today at"]::before {
     .sidebar__5e434 {
         background: var(--bg-base-tertiary);
     }
-    .searchBar__97492 {
+    .searchBar_c322aa {
         background: var(--bg-base-tertiary);
     }
     /* Probably the worst way to modify the code block colors */
