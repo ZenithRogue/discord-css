@@ -163,7 +163,7 @@ h3 > span > time[aria-label^="Today at"]::before {
         display: none;
     }
     /* STUPID Chat Buttons AGAIN */
-    div[aria-label="Send a gift"],
+    div[aria-label="Give a Gift"],
     div.expression-picker-chat-input-button:has(div[aria-label="Open sticker picker"]) {
         display: none;
     }
